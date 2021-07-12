@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-weight: bold;
+  font-family: 'Gotham';
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: greenyellow;
+}
+
+.score-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: 30px 100px 100px 100px 100px 50px 100px 100px 100px;
+
+  grid-template-rows: minmax(100px, auto) repeat(2, 100px);
+}
+
+.box-name {
+  background-color: white;
+  color: #54148f;
+  grid-column: span 4;
+  text-align: left;
+  font-size: 3rem;
+  box-shadow: 0 3px 10px rgb(10 10 10 / 0.7);
+  text-transform: uppercase;
+}
+
+.box-caret {
+  background-color: white;
+  color: #54148f;
+  font-size: 3rem;
+  box-shadow: 0 3px 10px rgb(10 10 10 / 0.7);
+}
+
+.box-set {
+  background-color: #007b22;
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  box-shadow: 0 3px 10px rgb(10 10 10 / 0.7);
+}
+
+.box-game {
+  background-color: #54148f;
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  box-shadow: 0 3px 10px rgb(10 10 10 / 0.7);
+}
+
+.box-points {
+  background-color: white;
+  color: #54148f;
+  text-align: center;
+  font-size: 4rem;
+  box-shadow: 0 3px 10px rgb(10 10 10 / 0.7);
+}
+
+.left-endcap {
+  grid-row: span 2;
+  background-color: #007b22;
+  grid-column: 0.1;
+}
